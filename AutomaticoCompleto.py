@@ -172,7 +172,7 @@ with strategy.scope():
     cols = 360
 
 #carga de la data categorica
-    x = np.load("/media/mccdual2080/Almacenamiengto/SahirProjects/SahirReyes/dataSetAutoencoder/DatasetAutoencoder/DataSetLatentSpace/Npy/Balanced/V1/Dataset120x360GreysNewCategories.npy")
+    x = np.load("C:\Users\aspr\Desktop\MCC\codigo\AutoencoderConvLSTM\Resultados\Dataset120x360GreysNewCategories.npy")
 
     x = x/255
     print (x.shape)

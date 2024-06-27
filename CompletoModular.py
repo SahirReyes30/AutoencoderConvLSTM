@@ -549,7 +549,6 @@ def time_monitoring(linkDeGuardado, training_duration , paso_1_duration, paso_2_
         log_file.write(f"\nPaso 4 completed in {paso_4_duration:.2f} seconds.\n")
         log_file.write(f"\nPaso 5 completed in {paso_5_duration:.2f} seconds.\n")
 
-    
 def start_time_monitoring():
     start_time = time.time()
     return start_time
@@ -640,7 +639,6 @@ def paso_4( decoder, res_forescast, linkDeGuardado, classesBalanced, horizon):
     save_img("decoded_data",decoded_data, linkDeGuardado, classesBalanced, horizon)
     paso_4_duration = time.time() - paso_4_start_time
     return decoded_data, paso_4_duration
-
 
 def paso_5( decoded_data, window, classesBalanced, horizon, linkDeGuardado, channels):
     """
